@@ -1,10 +1,10 @@
 import React from 'react';
-import { FaReact } from 'react-icons/fa';
+
 import { SiTicketmaster } from 'react-icons/si';
 import { LuGraduationCap } from 'react-icons/lu';
 import portfolio from '@/public/portfolio.png';
-import kpmg from '@/public/kpmg.svg';
-import maddevs from '@/public/maddevs.svg';
+import MadDevsLogoSwitcher from '@/lib/MadDevsLogoSwitcher';
+import KpmgLogoSwitcher from '@/lib/KpmgLogoSwitcher';
 
 export const links = [
   {
@@ -55,22 +55,16 @@ export const experiencesData: readonly Experience[] = [
     location: 'Mad Devs',
     description:
       'Developed 20+ reusable and user-friendly UI components using React, JavaScript, and micro-frontend architecture, delivering a responsive platform for 5+ universities and 1,000+ students in Vietnam. Optimized React application performance, reducing load times by 40% through code-splitting, lazy loading, resulting in improved user engagement.',
-    icon: React.createElement('img', {
-      src: maddevs.src,
-      alt: 'MadDevs',
-      className: 'w-full h-full object-contain p-2',
-    }),
+    icon: React.createElement(MadDevsLogoSwitcher),
+
     date: 'March 2021 - April 2022',
   },
   {
     title: 'Senior Audit Consultant',
     location: 'KPMG',
     description: `Supervised audits for clients in finance, and mining industries, ensuring compliance with international standards, and delivering high-quality work on time and within budget, received double promotion in a year. Led teams of up to 10-15 professionals in planning, executing, and closing audit engagements.`,
-    icon: React.createElement('img', {
-      src: kpmg.src,
-      alt: 'KPMG',
-      className: 'w-full h-full object-contain p-2 dark:invert dark:brightness-200',
-    }),
+    icon: React.createElement(KpmgLogoSwitcher),
+
     date: 'Jan 2018 - March 2021',
   },
   {

@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Maksat | Portfolio',
-  description: 'Maksat is a Front-End developer with 3 years of experience.',
+  description: 'Maksat is a Front-End developer with 5 years of experience.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
