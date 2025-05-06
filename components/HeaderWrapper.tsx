@@ -13,7 +13,7 @@ export default function HeaderWrapper() {
     return null;
   }
 
-  if (pathname === '/qr' || pathname === '/uselections2024') return null;
+  if (pathname === '/qr') return null;
 
   return <Header />;
 }

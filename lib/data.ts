@@ -5,6 +5,7 @@ import { LuGraduationCap } from 'react-icons/lu';
 import portfolio from '@/public/portfolio.png';
 import MadDevsLogoSwitcher from '@/lib/MadDevsLogoSwitcher';
 import KpmgLogoSwitcher from '@/lib/KpmgLogoSwitcher';
+import TicketmasterLogoSwitcher from './TicketmasterLogoSwitcher';
 
 export const links = [
   {
@@ -47,7 +48,7 @@ export const experiencesData: readonly Experience[] = [
     title: 'Software Engineer',
     location: 'Ticketmaster',
     description: `Developed intuitive, responsive web interfaces for TM1 Event Creation & Management platform, enabling event organizers to manage promotional offers through CRUD operations for 100,000+ events annually. Designed and implemented the Offers Dashboard using React, Redux, and REST APIs, integrating real-time API fetching, error handling, and validation messages, reducing manual corrections by 25%.`,
-    icon: React.createElement(SiTicketmaster),
+    icon: React.createElement(TicketmasterLogoSwitcher),
     date: 'April 2022 - Present',
   },
   {
@@ -74,13 +75,6 @@ export const experiencesData: readonly Experience[] = [
     icon: React.createElement(LuGraduationCap),
     date: '2014 - 2018',
   },
-  {
-    title: 'Frontend Development Principles ',
-    location: 'HackReactor Bootcamp ',
-    description: 'Certificate in Frontend Development Principles.',
-    icon: React.createElement(LuGraduationCap),
-    date: 'Graduation Year 2021',
-  },
 ];
 
 export const projectsData = [
@@ -90,7 +84,7 @@ export const projectsData = [
       'Interactive portfolio showcasing my projects, skills, and professional journey. Designed for seamless navigation, allowing visitors to explore my work, view source code, and easily connect with me.',
     tags: ['React', 'Resend', 'Tailwind', 'Typescript', 'Vercel'],
     imageUrl: portfolio,
-    link: 'https://MaksatAlymkulov.com/',
+    link: 'https://maksatalymkulov.com/',
     sourceCodeLink: 'https://github.com/MaksatAlymkulov/portfolio',
   },
 ] as const;

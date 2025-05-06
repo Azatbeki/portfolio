@@ -86,7 +86,7 @@ export default function Project({ title, description, tags, imageUrl, link, sour
           }}
         >
           <div
-            className="flex flex-col bg-white dark:bg-gray-800 rounded-lg p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto relative scrollbar-thin scrollbar-thumb-gray-400 dark:scrollbar-thumb-gray-300 scrollbar-track-gray-200 dark:scrollbar-track-gray-700"
+            className="flex flex-col bg-white dark:bg-stone-600 rounded-lg p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto relative scrollbar-thin scrollbar-thumb-gray-400 dark:scrollbar-thumb-gray-300 scrollbar-track-gray-200 dark:scrollbar-track-gray-700"
             onClick={(e) => e.stopPropagation()}
           >
             <button
