@@ -106,7 +106,7 @@ export const projectsData = [
       'Interactive portfolio showcasing my projects, skills, and professional journey. Designed for seamless navigation, allowing visitors to explore my work, view source code, and easily connect with me.',
     tags: ['React', 'Resend', 'Tailwind', 'Typescript', 'Vercel'],
     imageUrl: portfolio,
-    link: 'https://maksatalymkulov.com/',
+    link: 'https://www.maksatalym.com/',
     sourceCodeLink: 'https://github.com/MaksatAlymkulov/portfolio',
   },
 ] as const;
