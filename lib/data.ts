@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { SiTicketmaster } from 'react-icons/si';
 import { LuGraduationCap } from 'react-icons/lu';
 import portfolio from '@/public/portfolio.png';
+import onlineGrocery from '@/public/online-grocery.png';
 import MadDevsLogoSwitcher from '@/lib/MadDevsLogoSwitcher';
 import KpmgLogoSwitcher from '@/lib/KpmgLogoSwitcher';
 import TicketmasterLogoSwitcher from './TicketmasterLogoSwitcher';
@@ -78,6 +78,28 @@ export const experiencesData: readonly Experience[] = [
 ];
 
 export const projectsData = [
+  {
+    title: 'Online Grocery',
+    description:
+      'Full-stack grocery delivery app with user login, cart functionality, and secure online payments. Built using MongoDB, Express, React, and Node.js for a seamless shopping experience.',
+    tags: [
+      'React',
+      'JavaScript',
+      'Node.js',
+      'Express.js',
+      'React Router',
+      'ContextAPI',
+      'Axios',
+      'MongoDB',
+      'Cloudinary',
+      'Stripe',
+      'Vercel',
+      'Tailwind',
+    ],
+    imageUrl: onlineGrocery,
+    link: 'https://online-groccery-client.vercel.app/',
+    sourceCodeLink: 'https://github.com/MaksatAlymkulov/greencart-deploy',
+  },
   {
     title: 'Portfolio Website',
     description:
