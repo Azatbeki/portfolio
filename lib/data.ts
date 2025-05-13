@@ -3,6 +3,7 @@ import React from 'react';
 import { LuGraduationCap } from 'react-icons/lu';
 import portfolio from '@/public/portfolio.png';
 import onlineGrocery from '@/public/online-grocery.png';
+import aiInterviewPrep from '@/public/ai-interview-prep.png';
 import MadDevsLogoSwitcher from '@/lib/MadDevsLogoSwitcher';
 import KpmgLogoSwitcher from '@/lib/KpmgLogoSwitcher';
 import TicketmasterLogoSwitcher from './TicketmasterLogoSwitcher';
@@ -79,6 +80,28 @@ export const experiencesData: readonly Experience[] = [
 
 export const projectsData = [
   {
+    title: 'AI Interview Prep',
+    description:
+      'AI interview preparation tool that generates tailored questions and answers based on your role, skills, and experience. Leveraging AI, the platform simulates real interview scenarios to help candidates practice effectively, improve their confidence, and get personalized feedback to refine their responses.',
+    tags: [
+      'React',
+      'JavaScript',
+      'Node.js',
+      'Express.js',
+      'React Router',
+      'ContextAPI',
+      'Axios',
+      'MongoDB',
+      'Cloudinary',
+      'Vercel',
+      'Render',
+      'Tailwind',
+    ],
+    imageUrl: aiInterviewPrep,
+    link: 'https://aiprep.it.com/',
+    sourceCodeLink: 'https://github.com/MaksatAlymkulov/interview-prep-ai',
+  },
+  {
     title: 'Online Grocery',
     description:
       'Full-stack grocery delivery app with user login, cart functionality, and secure online payments. Built using MongoDB, Express, React, and Node.js for a seamless shopping experience.',
@@ -100,6 +123,7 @@ export const projectsData = [
     link: 'https://online-groccery-client.vercel.app/',
     sourceCodeLink: 'https://github.com/MaksatAlymkulov/greencart-deploy',
   },
+
   {
     title: 'Portfolio Website',
     description:
