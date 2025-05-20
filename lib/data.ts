@@ -59,7 +59,7 @@ export const experiencesData: readonly Experience[] = [
       'Developed 20+ reusable and user-friendly UI components using React, JavaScript, and micro-frontend architecture, delivering a responsive platform for 5+ universities and 1,000+ students in Vietnam. Optimized React application performance, reducing load times by 40% through code-splitting, lazy loading, resulting in improved user engagement.',
     icon: React.createElement(MadDevsLogoSwitcher),
 
-    date: 'March 2021 - April 2022',
+    date: 'March 2020 - April 2022',
   },
   {
     title: 'Senior Audit Consultant',
@@ -67,7 +67,7 @@ export const experiencesData: readonly Experience[] = [
     description: `Supervised audits for clients in finance, and mining industries, ensuring compliance with international standards, and delivering high-quality work on time and within budget, received double promotion in a year. Led teams of up to 10-15 professionals in planning, executing, and closing audit engagements.`,
     icon: React.createElement(KpmgLogoSwitcher),
 
-    date: 'Jan 2018 - March 2021',
+    date: 'Jan 2018 - March 2020',
   },
   {
     title: 'Bachelor of Business Administration',
