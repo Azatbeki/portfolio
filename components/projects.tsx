@@ -1,14 +1,13 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import SectionHeading from './section-heading';
 import { projectsData } from '@/lib/data';
 import Project from './project';
 import { useSectionInView } from '@/lib/hooks';
 
 export default function Projects() {
-  const { ref } = useSectionInView('Projects', 0.3);
-  const [isAnyModalOpen, setIsAnyModalOpen] = useState(false);
+  const { ref } = useSectionInView('Projects');
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
@@ -16,7 +15,7 @@ export default function Projects() {
       <div className="flex flex-col gap-8">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
-            <Project {...project} setIsAnyModalOpen={setIsAnyModalOpen} />
+            <Project {...project} />
           </React.Fragment>
         ))}
       </div>

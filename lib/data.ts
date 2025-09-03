@@ -2,11 +2,10 @@ import React from 'react';
 
 import { LuGraduationCap } from 'react-icons/lu';
 import portfolio from '@/public/portfolio.png';
-import onlineGrocery from '@/public/online-grocery.png';
-import aiInterviewPrep from '@/public/ai-interview-prep.png';
-import MadDevsLogoSwitcher from '@/lib/MadDevsLogoSwitcher';
+import heartDisease from '@/public/heart_disease.png';
+import costPrediction from '@/public/cost_prediction.png';
 import KpmgLogoSwitcher from '@/lib/KpmgLogoSwitcher';
-import TicketmasterLogoSwitcher from './TicketmasterLogoSwitcher';
+import CapitaloneLogoSwitcher from './CapitaloneLogoSwitcher';
 
 export const links = [
   {
@@ -20,6 +19,10 @@ export const links = [
   {
     name: 'Experience',
     hash: '#experience',
+  },
+  {
+    name: 'Education',
+    hash: '#education',
   },
   {
     name: 'Projects',
@@ -46,127 +49,106 @@ type Experience = {
 
 export const experiencesData: readonly Experience[] = [
   {
-    title: 'Software Engineer',
-    location: 'Ticketmaster',
-    description: `Developed intuitive, responsive web interfaces for TM1 Event Creation & Management platform, enabling event organizers to manage promotional offers through CRUD operations for 100,000+ events annually. Designed and implemented the Offers Dashboard using React, Redux, and REST APIs, integrating real-time API fetching, error handling, and validation messages, reducing manual corrections by 25%.`,
-    icon: React.createElement(TicketmasterLogoSwitcher),
-    date: 'April 2022 - Present',
+    title: 'Data Scientist, E-commerce & Saas',
+    location: 'Capital One Shopping',
+    description: `I analyzed 15M+ homepage visits with SQL and Python to identify drop-off points, designed 10+ A/B tests on layouts that lifted “Add to Chrome” clicks by 20%, and partnered with engineers and marketers to optimize promotions, generating $3M+ in affiliate revenue. I also applied predictive models to boost user reactivation by 22%, built anomaly detection reducing fraud by 28%, and created 8 automated Tableau dashboards to track key product metrics.`,
+    icon: React.createElement(CapitaloneLogoSwitcher),
+    date: 'August 2022 - Present',
   },
   {
-    title: 'Frontend Software Engineer',
-    location: 'Mad Devs',
-    description:
-      'Developed 20+ reusable and user-friendly UI components using React, JavaScript, and micro-frontend architecture, delivering a responsive platform for 5+ universities and 1,000+ students in Vietnam. Optimized React application performance, reducing load times by 40% through code-splitting, lazy loading, resulting in improved user engagement.',
-    icon: React.createElement(MadDevsLogoSwitcher),
-
-    date: 'March 2020 - April 2022',
-  },
-  {
-    title: 'Senior Audit Consultant',
-    location: 'KPMG',
-    description: `Supervised audits for clients in finance, and mining industries, ensuring compliance with international standards, and delivering high-quality work on time and within budget, received double promotion in a year. Led teams of up to 10-15 professionals in planning, executing, and closing audit engagements.`,
+    title: 'Financial Analyst',
+    location: 'KPMG Advisory',
+    description: `I led the development of a scenario-driven financial model for a $56M rail transportation firm to simulate outcomes and guide M&A strategy, and directed valuation analysis for a $500M mining company by improving data integrity and model accuracy. I also supported portfolio analytics for a $250M VC fund and sovereign assets, applying market benchmarks and DCF models to assess investment value under varying macroeconomic scenarios.`,
     icon: React.createElement(KpmgLogoSwitcher),
 
-    date: 'Jan 2018 - March 2020',
+    date: 'March 2019 - January 2022',
+  },
+];
+
+type Education = {
+  title: string;
+  location: string;
+  description: string;
+  url?: string;
+  icon: React.ReactNode;
+  date: string;
+};
+
+export const educationData: readonly Education[] = [
+  {
+    title: 'Master of Science - Computer Science (Data Science & Analytics) - Part Time',
+    location: 'San Francisco Bay University ',
+    description:
+      'Relevant Coursework: Data Visualization & Business Intelligence, Experimental Design & Analysis, Data Modeling & Implementation Techniques, Database Technologies (SQL), Machine Learning for Analytics',
+    icon: React.createElement(LuGraduationCap),
+    date: 'August 2024 - May 2026',
   },
   {
     title: 'Bachelor of Business Administration',
     location: 'American University of Central Asia',
-    description: 'Graduated with a BS in Business Administration.',
+    description: 'Magna Cum Laude (top 10%) distinction and was awarded a full merit scholarship through high competition at university',
     icon: React.createElement(LuGraduationCap),
-    date: '2014 - 2018',
+    date: 'September 2014 - June 2018',
   },
 ];
 
 export const projectsData = [
   {
-    title: 'AI Interview Prep',
+    title: 'Insurance Cost Prediction using Linear Regression',
     description:
-      'AI interview preparation tool that generates tailored questions and answers based on your role, skills, and experience. Leveraging AI, the platform simulates real interview scenarios to help candidates practice effectively, improve their confidence, and get personalized feedback to refine their responses.',
-    tags: [
-      'React',
-      'JavaScript',
-      'Node.js',
-      'Express.js',
-      'React Router',
-      'ContextAPI',
-      'Axios',
-      'MongoDB',
-      'Cloudinary',
-      'Vercel',
-      'Render',
-      'Tailwind',
-    ],
-    imageUrl: aiInterviewPrep,
-    link: 'https://aiprep.it.com/',
-    sourceCodeLink: 'https://github.com/MaksatAlymkulov/interview-prep-ai',
+      'The project predicts insurance charges using a dataset from Kaggle. It applies linear regression to identify key factors influencing costs and build a predictive model that can help to estimate individuals insurance charges.',
+    tags: ['Python', 'Pandas', 'Numpy', 'Data Analysis', 'EDA', 'Statistics'],
+    imageUrl: costPrediction,
+    link: 'https://github.com/Azatbeki/Predicting-Insurance-cost-using-linear-regression',
+    sourceCodeLink: 'https://github.com/Azatbeki/Predicting-Insurance-cost-using-linear-regression',
   },
   {
-    title: 'Online Grocery',
+    title: 'Heart Disease Prediction',
     description:
-      'Full-stack grocery delivery app with user login, cart functionality, and secure online payments. Built using MongoDB, Express, React, and Node.js for a seamless shopping experience.',
-    tags: [
-      'React',
-      'JavaScript',
-      'Node.js',
-      'Express.js',
-      'React Router',
-      'ContextAPI',
-      'Axios',
-      'MongoDB',
-      'Cloudinary',
-      'Stripe',
-      'Vercel',
-      'Tailwind',
-    ],
-    imageUrl: onlineGrocery,
-    link: 'https://online-groccery-client.vercel.app/',
-    sourceCodeLink: 'https://github.com/MaksatAlymkulov/greencart-deploy',
+      'This project predicts heart disease risk using a Kaggle health records dataset. It leverages data visualization and machine learning to identify key risk factors and builds a predictive model with the K-Nearest Neighbors (KNN) classifier for high accuracy and early detection.',
+    tags: ['Python', 'Pandas', 'Numpy', 'Data Analysis', 'Scikit-learn', 'Data Visualization'],
+    imageUrl: heartDisease,
+    link: 'https://github.com/Azatbeki/Heart-Disease-Prediction',
+    sourceCodeLink: 'https://github.com/Azatbeki/Heart-Disease-Prediction',
   },
-
   {
     title: 'Portfolio Website',
     description:
       'Interactive portfolio showcasing my projects, skills, and professional journey. Designed for seamless navigation, allowing visitors to explore my work, view source code, and easily connect with me.',
     tags: ['React', 'Resend', 'Tailwind', 'Typescript', 'Vercel'],
     imageUrl: portfolio,
-    link: 'https://www.maksatalym.com/',
-    sourceCodeLink: 'https://github.com/MaksatAlymkulov/portfolio',
+    link: 'https://www.azatismailov.com/',
+    sourceCodeLink: 'https://github.com/Azatbeki/portfolio',
   },
 ] as const;
 
 export const skillsData = [
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'HTML',
-  'CSS',
-  'Next.js',
-  'REST APIs',
-  'Axios',
-  'GraphQL',
-  'Redux',
-  'Context API',
-  'Material UI',
-  'Bootstap',
-  'Tailwind',
-  'SAAS',
-  'Less',
-  'Unit testing',
-  'Jest',
-  'Node.js',
-  'Firebase',
-  'MongoDB',
-  'Amazon Web Services',
-  'MySQL',
-  'Object-Oriented Programming',
-  'Data Structures and Algorithms',
-  'CI/CD Pipelines',
-  'Git',
-  'Agile',
-  'Jira',
-  'Figma',
+  // Technical Stack
+  'SQL',
+  'Python (pandas, NumPy, scikit-learn)',
+  'Amplitude',
+  'Optimizely',
+  'Tableau',
+  'Looker',
   'Power BI',
-  'Leetcode',
-  'Artificial Intelligence',
+
+  // Analytics & Experimentation
+  'A/B Testing',
+  'Hypothesis Testing',
+  'Regression Analysis',
+  'Forecasting',
+  'Cohort Analysis',
+  'Funnel Optimization',
+  'KPI Tracking & Reporting',
+  'Data Storytelling',
+
+  // ML & Cloud
+  'Logistic Regression',
+  'Churn Modeling',
+  'Predictive Analytics',
+  'Snowflake',
+  'AWS Redshift',
+  'dbt',
+  'Git',
+  'Airflow',
 ] as const;

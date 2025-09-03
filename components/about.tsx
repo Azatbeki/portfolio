@@ -6,12 +6,12 @@ import { motion } from 'framer-motion';
 import { useSectionInView } from '@/lib/hooks';
 
 export default function About() {
-  const { ref } = useSectionInView('About', 0.5);
+  const { ref } = useSectionInView('About', 0.8);
 
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-36"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -19,32 +19,27 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        My journey into tech didn’t start with code — it started with curiosity. After graduating with a degree in Business Administration,
-        I began my career as a Senior Consultant at KPMG. It was a fast-paced environment that taught me how to think critically, lead with
-        clarity, and solve complex problems under pressure. But deep down, I knew I wanted to build things — not just audit them.
+        My journey into data science didn’t begin with machine learning — it started with problem-solving. After earning my degree in
+        Business Administration, I began as a Financial Analyst at KPMG, where I learned to dissect complex data, build financial models,
+        and make clear recommendations under pressure. But I soon realized I wanted to go deeper: not just analyze outcomes, but shape them
+        with data-driven products.
       </p>
 
       <p className="mb-3">
-        Over the past 5 years, I’ve had the opportunity to work with teams at Ticketmaster and Mad Devs, building scalable, high-impact web
-        applications used by thousands of people. I specialize in React, TypeScript, and modern frontend architecture, and I take pride in
-        writing clean, maintainable code that not only works — but feels good to use.
+        Over the past 3+ years, I’ve grown into a Data Scientist specializing in product analytics, experimentation, and applied machine
+        learning. At Capital One Shopping, I’ve worked on analyzing large-scale user event data, designing A/B tests, and building
+        predictive models to support retention and product strategy. My toolkit includes Python, SQL, ML, Tableau, and cloud platforms like
+        AWS and Databricks — but more importantly, I focus on translating complex data into actionable insights that guide decision-making.
       </p>
 
       <p className="mb-3">
-        For me, programming is more than writing code. It’s creative problem-solving at scale — crafting something meaningful from scratch,
-        shaping every interaction with intent, and knowing that real people rely on what you build.
+        For me, data science is about more than algorithms. It’s about curiosity, experimentation, and creating meaningful impact — whether
+        that’s optimizing user journeys, deploying predictive models, or scaling analytics frameworks that empower teams.
       </p>
 
       <p className="mb-3">
-        Outside of work, I’m a husband, a weekend road cyclist, and a regular on the local pickleball court. I love playing basketball,
-        hiking the trails of the Bay Area, and dialing in espresso like a barista chasing the perfect cup. These aren’t just hobbies — they
-        keep me grounded, teach me patience, and remind me of the joy of continuous improvement.
-      </p>
-
-      <p className="mb-3">
-        At the end of the day, I’m someone who finds purpose in the process — whether that’s designing clean architecture, solving a UI
-        challenge, or learning a better way to brew coffee. I’m always looking for new ways to grow, new things to build, and new teams to
-        build them with.
+        Outside of work, I’m a husband, a weekend hiker, and a regular on the pickleball court. Sports and hobbies keep me grounded,
+        teaching patience and continuous improvement — values I bring back into every project and model I build.
       </p>
     </motion.section>
   );

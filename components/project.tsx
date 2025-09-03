@@ -10,7 +10,6 @@ import { TbWorldWww } from 'react-icons/tb';
 import { StaticImageData } from 'next/image';
 
 type ProjectProps = (typeof projectsData)[number] & {
-  setIsAnyModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
   imageUrl: string | StaticImageData;
   imageUrl2?: string | StaticImageData;
 };
@@ -110,19 +109,6 @@ export default function Project({ title, description, tags, imageUrl, link, sour
             <p className="text-gray-700 dark:text-gray-300 mb-2">{description}</p>
             {link && (
               <div className="text-center mt-4 flex justify-center space-x-10">
-                <div className="transition-transform hover:scale-125">
-                  <a
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-2xl flex items-center"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <TbWorldWww size={24} className="mr-2" />
-                    View Project
-                  </a>
-                </div>
-
                 <div className="transition-transform hover:scale-125">
                   <a
                     href={sourceCodeLink}
