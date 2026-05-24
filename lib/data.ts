@@ -6,6 +6,7 @@ import heartDisease from '@/public/heart_disease.png';
 import costPrediction from '@/public/cost_prediction.png';
 import KpmgLogoSwitcher from '@/lib/KpmgLogoSwitcher';
 import CapitaloneLogoSwitcher from './CapitaloneLogoSwitcher';
+import MetaLogoSwitcher from './MetaLogoSwitcher';
 
 export const links = [
   {
@@ -49,11 +50,18 @@ type Experience = {
 
 export const experiencesData: readonly Experience[] = [
   {
+    title: 'Data Scientist',
+    location: 'Meta Reality Labs',
+    description: `At Meta Reality Labs, I focus on GTM and promo analytics for Ray-Ban and Quest products using causal impact analysis to measure incremental sales and promo efficiency. I automated ~80% of recurring calculations, cut analysis turnaround from ~10 days to ~3, and reduced iCAC by ~22% per incremental customer.`,
+    icon: React.createElement(MetaLogoSwitcher),
+    date: 'January 2026 - Present',
+  },
+  {
     title: 'Data Scientist, E-commerce & Saas',
     location: 'Capital One Shopping',
     description: `I analyzed 15M+ homepage visits with SQL and Python to identify drop-off points, designed 10+ A/B tests on layouts that lifted “Add to Chrome” clicks by 20%, and partnered with engineers and marketers to optimize promotions, generating $3M+ in affiliate revenue. I also applied predictive models to boost user reactivation by 22%, built anomaly detection reducing fraud by 28%, and created 8 automated Tableau dashboards to track key product metrics.`,
     icon: React.createElement(CapitaloneLogoSwitcher),
-    date: 'August 2022 - Present',
+    date: 'August 2022 - December 2025',
   },
   {
     title: 'Financial Analyst',

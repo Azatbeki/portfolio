@@ -19,26 +19,32 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        My journey into data science didn’t begin with machine learning — it started with problem-solving. After earning my degree in
-        Business Administration, I began as a Financial Analyst at KPMG, where I learned to dissect complex data, build financial models,
-        and make clear recommendations under pressure. But I soon realized I wanted to go deeper: not just analyze outcomes, but shape them
-        with data-driven products.
+        My journey into data science didn't begin with machine learning — it started with problem-solving. After earning my degree in
+        Business Administration, I began as a Financial Analyst at KPMG, where I learned to break down complex data, build financial models,
+        and make clear recommendations under pressure. But I soon realized I wanted to go deeper: not just analyze outcomes, but help shape
+        them through data-driven products and decisions.
       </p>
 
       <p className="mb-3">
-        Over the past 3+ years, I’ve grown into a Data Scientist specializing in product analytics, experimentation, and applied machine
-        learning. At Capital One Shopping, I’ve worked on analyzing large-scale user event data, designing A/B tests, and building
-        predictive models to support retention and product strategy. My toolkit includes Python, SQL, ML, Tableau, and cloud platforms like
-        AWS and Databricks — but more importantly, I focus on translating complex data into actionable insights that guide decision-making.
+        Over the past few years, I've grown into a Data Scientist specializing in product analytics, GTM analytics, experimentation, causal
+        inference, and applied machine learning. At Capital One, I worked on analyzing large-scale user behavior, designing A/B tests,
+        building dashboards, and developing predictive models to support retention, conversion, and product strategy.
       </p>
 
       <p className="mb-3">
-        For me, data science is about more than algorithms. It’s about curiosity, experimentation, and creating meaningful impact — whether
-        that’s optimizing user journeys, deploying predictive models, or scaling analytics frameworks that empower teams.
+        Most recently at Meta Reality Labs, my work has focused on GTM and promo analytics for Reality Labs products. I use causal impact
+        analysis to measure incremental sales, evaluate promo efficiency, and support campaign decision-making across product and business
+        stakeholders.
       </p>
 
       <p className="mb-3">
-        Outside of work, I’m a husband, a weekend hiker, and a regular on the pickleball court. Sports and hobbies keep me grounded,
+        For me, data science is about more than algorithms. It's about curiosity, experimentation, and creating meaningful impact — whether
+        that's optimizing user journeys, improving acquisition efficiency, or building scalable analytics workflows that help teams make
+        better decisions.
+      </p>
+
+      <p className="mb-3">
+        Outside of work, I'm a husband, a weekend hiker, and a regular on the pickleball court. Sports and hobbies keep me grounded,
         teaching patience and continuous improvement — values I bring back into every project and model I build.
       </p>
     </motion.section>
